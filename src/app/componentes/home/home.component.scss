@@ -1,0 +1,54 @@
+// @import '~@fortawesome/fontawesome-free/css/all.css';
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logout {
+    position: absolute;
+    top: 90%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 25px;
+    left: 10px;
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+  }
+
+  .regisros{
+    position: absolute;
+    top: 1%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 25px;
+    left: 10px;
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+  }
+  
+  .logout i {
+    cursor: pointer;
+    font-size: 24px; /* Puedes ajustar el tamaño del icono según tu preferencia */
+    color: #333; /* Cambia el color si lo deseas */
+  }
+
+.boton {
+    width: 100vw;
+    height: 50vh;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgb(110, 146, 196);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

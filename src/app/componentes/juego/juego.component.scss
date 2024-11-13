@@ -1,0 +1,203 @@
+ion-content {
+    --ion-background-color: #3b81bb; 
+  }
+  
+  .sign-out{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+  }
+  
+  .foto{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .contenedor-botones{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    // left: 20%;
+    // bottom: 2%;
+  }
+  
+  .boton{
+    background-color: #80afff97;
+    height: 80%;
+    flex: 1;
+  }
+  
+  .btn-rank{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: -2%;
+    right: 5%;
+  }
+  
+  .back{
+    position: absolute;
+    top: -47%;
+    left: -5%;
+    height: 80%;
+    width: 20%;
+  }
+  
+  .back2{
+    position: absolute;
+    top: -50%;
+    left: 5%;
+    height: 80%;
+    width: 20%;
+  }
+  // ===============================================SELECTOR===============================================
+  .container{
+    position: absolute;
+    height: 50%;
+    width: 100%;
+  }
+  
+  .selector{
+    overflow-x: auto;
+    white-space: nowrap;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.341);
+    align-content: center;
+  }
+  
+  .personaje-selector{
+    display: inline-block;
+    text-align: center;
+    height: 80%;
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 10%;
+  }
+  
+  .btn-play{
+    position: relative;
+    bottom: -110%;
+    left: 35%;
+  }
+  
+  .personaje{
+    position: relative;
+    height: 10%;
+    width: 15%;
+    top: 40%;
+    left: 40%;
+  }
+  
+  // ==============================================RANKING===============================================
+  
+  .ranking {
+    overflow-x: hidden;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    left: 5%;
+    border-radius: 30px;
+    background: #1e1d1d8c;
+    box-shadow: 15px 15px 30px #bebebe7d, -15px -15px 30px #ffffff81;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  table {
+    width: 100%; 
+    border-collapse: separate; 
+    border-spacing: 25px;
+  }
+  
+  thead {
+    position: relative;
+    text-align: center;
+  }
+  
+  td {
+    word-wrap: break-word; 
+  }
+  
+  th{
+    font-size: 2rem; 
+    text-align: left;
+  }
+  
+  tbody{
+    font-size: 1.5rem; 
+  }
+  
+  
+  // =============================================ANIM SALIDAS=============================================
+  
+  .slide-out-right{-webkit-animation:slide-out-right .5s cubic-bezier(.55,.085,.68,.53) both;animation:slide-out-right .5s cubic-bezier(.55,.085,.68,.53) both}
+  @-webkit-keyframes slide-out-right{0%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}100%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}}@keyframes slide-out-right{0%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}100%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}}
+  
+  
+  .slide-out-left{-webkit-animation:slide-out-left .5s cubic-bezier(.55,.085,.68,.53) both;animation:slide-out-left .5s cubic-bezier(.55,.085,.68,.53) both}
+  @-webkit-keyframes slide-out-left{0%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}100%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}}@keyframes slide-out-left{0%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}100%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}}
+  
+  
+  .slide-in-bottom{-webkit-animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) both}
+  @-webkit-keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+  
+  
+  .slide-out-bottom{-webkit-animation:slide-out-bottom .5s cubic-bezier(.55,.085,.68,.53) both;animation:slide-out-bottom .5s cubic-bezier(.55,.085,.68,.53) both}
+  
+  @-webkit-keyframes slide-out-bottom{0%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}100%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}}@keyframes slide-out-bottom{0%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}100%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}}
+  
+  
+  // =============================================BOTON PLAY=============================================
+  // button {
+  //   /* Variables */
+  //   --button_radius: 0.75em;
+  //   --button_color: #e8e8e8;
+  //   --button_outline_color: #000000;
+  //   font-size: 17px;
+  //   font-weight: bold;
+  //   border: none;
+  //   border-radius: var(--button_radius);
+  //   background: var(--button_outline_color);
+  // }
+
+  button{
+    width: 70%;
+    background-color: black;
+    height: 60px;
+    font-size: 20px;
+    color: white;
+    border-radius: 20px;
+  }
+  
+  .button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+  }
+  
+  button:hover .button_top {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+  }
+  
+  button:active .button_top {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+  }
+  
+  

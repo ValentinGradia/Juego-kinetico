@@ -1,0 +1,24 @@
+<div class="contenedor" style="background-color: black;padding: 20px;">
+  <div class="info" style="text-align: center;">
+    <h1 style="color: white;font-size: 40px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">JUEGO KINÉTICO</h1>
+  </div>
+
+  <div style="display: flex;justify-content: center;">
+    <img style="height: 25vh;" src="assets/icono.png">
+  </div>
+
+  <div class="form">
+
+    <div class="login-form">
+      <input type="text" [(ngModel)]="correo" placeholder="Correo">
+      <input type="password" [(ngModel)]="contrasenia" placeholder="Clave">
+      <div class="iconos" style="display: flex;justify-content: space-around;margin-top: 25px;flex-direction: column;gap: 15px;">
+        <button class="boton" (click)="accederAplicacion('admin')">ADMIN</button>
+        <button class="boton" (click)="accederAplicacion('usuario')">USUARIO</button>
+        <button class="boton" (click)="accederAplicacion('invitado')">INVITADO</button>
+      </div>
+      <button style="font-size: 30px;" class="button" (click)="verificarUsuario()">INGRESAR</button>
+    </div>
+  </div>
+</div>
+

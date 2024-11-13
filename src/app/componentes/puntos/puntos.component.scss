@@ -1,0 +1,40 @@
+.tabla-estilizada {
+    width: 80%;
+    margin: 9vh auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tabla-estilizada th {
+    background-color: #000000; /* Color del header */
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .tabla-estilizada td {
+    padding: 10px;
+    color: white;
+    text-align: left;
+    background-color: #595757; /* Color de las filas */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tabla-estilizada tr:hover td {
+    background-color: #d9d9d9; /* Color al pasar el mouse */
+  }
+
+
+  .boton-bonito {
+    height: 50px;
+    width: 140px;
+    background-color: #000000; /* Color de fondo */
+    color: white; /* Color de texto */
+    border: none; /* Sin borde */
+    padding: 12px 24px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de elevación */
+  }

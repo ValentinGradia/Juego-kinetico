@@ -1,0 +1,24 @@
+<div class="ion-page" id="main-content">  
+  <div class="no-scroll" style="height: 100vh;background-color: rgb(226, 226, 226);"> 
+
+    @if (jugando) 
+    {
+      <div id="personaje" class="personaje">
+        <img [src]="imagenPersonaje" style="position: absolute; bottom: -10%; object-fit: cover;">
+      </div>
+
+      <p style="position: absolute; font-size: 50px; left: 50%;top: 20%;">{{puntos}}</p>
+    }
+
+    @if (perdio) {
+        <div style="display: flex;flex-direction: column;width: 100%;align-items: center;gap: 20px;background-color: rgb(195, 195, 195);margin-top: 30%; height: 500px;">
+          <h1 style="font-size: 35px;">Haz perdido</h1>
+          <h3 style="font-size: 22px;">Tu tiempo fue de {{puntosGuardados}} segundos</h3>
+          <button (click)="iniciarJuego()" style="margin-top: 35px;">Volver a jugar</button>
+          <button (click)="salir()">Salir</button>
+          <button (click)="guardar()">Guardar partida</button>
+        </div>
+    }
+  </div>
+</div>
+
